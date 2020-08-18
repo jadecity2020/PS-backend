@@ -3,7 +3,7 @@ class SpendsController < ApplicationController
 
   # GET /spends
   def index
-    @spends = Spend.all.order('created_at DESC')
+    @spends = Spend.all
 
     render json: @spends.to_json
   end
