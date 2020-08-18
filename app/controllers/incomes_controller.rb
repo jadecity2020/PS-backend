@@ -5,12 +5,12 @@ class IncomesController < ApplicationController
   def index
     @incomes = Income.all
     # .order('created_at DESC')
-    render json: @incomes.to_json
+    render json: @incomes
   end
 
   # GET /incomes/1
   def show
-    render json: @income.to_json
+    render json: @income
   end
 
   # POST /incomes

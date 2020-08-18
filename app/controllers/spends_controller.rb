@@ -5,12 +5,12 @@ class SpendsController < ApplicationController
   def index
     @spends = Spend.all
 
-    render json: @spends.to_json
+    render json: @spends
   end
 
   # GET /spends/1
   def show
-    render json: @spend.to_json
+    render json: @spend
   end
 
   # POST /spends
