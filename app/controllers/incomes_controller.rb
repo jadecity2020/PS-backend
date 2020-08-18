@@ -3,8 +3,8 @@ class IncomesController < ApplicationController
 
   # GET /incomes
   def index
-    @incomes = Income.all.order('created_at DESC')
-
+    @incomes = Income.all
+    # .order('created_at DESC')
     render json: @incomes.to_json
   end
 
